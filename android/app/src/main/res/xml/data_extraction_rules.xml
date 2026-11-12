@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <include domain="database" path="catatan_warung.db" />
+        <include domain="database" path="catatan_warung.db-journal" />
+        <include domain="database" path="catatan_warung.db-wal" />
+        <include domain="database" path="catatan_warung.db-shm" />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="database" path="catatan_warung.db" />
+        <include domain="database" path="catatan_warung.db-journal" />
+        <include domain="database" path="catatan_warung.db-wal" />
+        <include domain="database" path="catatan_warung.db-shm" />
+    </device-transfer>
+</data-extraction-rules>

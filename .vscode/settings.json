@@ -1,0 +1,5 @@
+{
+  "dart.flutterSdkPath": "C:/src/flutter-ocs-pos-stable",
+  "dart.addSdkToTerminalPath": true,
+  "dart.flutterAdditionalArgs": ["--no-version-check"]
+}

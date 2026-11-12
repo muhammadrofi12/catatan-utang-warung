@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <include domain="database" path="catatan_warung.db" />
+    <include domain="database" path="catatan_warung.db-journal" />
+    <include domain="database" path="catatan_warung.db-wal" />
+    <include domain="database" path="catatan_warung.db-shm" />
+</full-backup-content>

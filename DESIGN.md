@@ -1,0 +1,13 @@
+# Catatan Warung — Android design
+
+The approved PRD pins the surface: two large category choices and a readable transaction history. This takes precedence over exploratory visual concepts. Mode: Operate.
+
+The user's finance-app reference replaces the initial green identity: a royal-blue header, white rounded content surface, circular category icons, blue pill-shaped actions, and generous white space. The provided reference is the visual authority; the concept-seed assignment (bf68abc0, index 6) is superseded by this explicit user choice. Mode: Operate.
+
+Use native Material 3 navigation and controls. Blue #245FB0 for primary actions and #2865B6 for the home header; white for the light content surface; ink #17263B for body text and #53647A for secondary text. Pale blue #EAF2FD supports customer icons and balance panels. Amber #FFF4DD/#664600 distinguishes supplier icons; green #E9F6EF/#176440 denotes payments, always paired with labels. Dark mode has corresponding surface/foreground roles. Roboto system typography; 18–20sp body, 30sp balance, 56dp primary controls, 48dp other hit areas. No decorative charts, illustrations, intro animation, or invented demonstration data in production.
+
+Home: blue app bar and book title area, then a white sheet with a 32dp top radius. Two tappable category rows retain separate totals and destinations; backup status stays visible in the same scrolling page. Person lists: search, pill filters, circular category icons, and separated rows. Detail: a pale-blue balance panel, two explicitly named actions, reverse chronological history with circular transaction icons and correction states. Forms use 16dp filled input borders and 56dp pill-shaped save actions. Confirmation remains required for corrections, cancellation, deletion and restore. The reference's bottom tabs, chart, and onboarding are not added because they would introduce destinations or workflows outside the approved application.
+
+Screenshots in `artifacts/ui-redesign/` are rendered by `tool/preview_screens.dart` using an isolated temporary database and synthetic people/amounts. They are presentation evidence, not real customer records. Validation must cover light/dark contrast, 200% text, existing navigation, and the existing transaction tests.
+
+Do not shrink accessibility text scaling to fit. Scroll, wrap money and actions, keep SafeArea and keyboard insets, and provide TalkBack labels. Layout is single-column up to 600dp, bounded to 720dp on larger screens. Respect system reduced motion. Light and dark Material color roles are defined; the initial light theme prioritizes shop daylight legibility.

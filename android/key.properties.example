@@ -1,0 +1,4 @@
+storeFile=C:/private-signing/catatan-warung.jks
+storePassword=REPLACE_LOCALLY
+keyAlias=catatan-warung
+keyPassword=REPLACE_LOCALLY
